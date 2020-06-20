@@ -1,0 +1,21 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "serverlessrepo-intent-fit-alexaskillskitnodejsfact-XUX2ITLIAUQR",
+          "sourceDir": "lambda/us-east-1_serverlessrepo-intent-fit-alexaskillskitnodejsfact-XUX2ITLIAUQR"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-IN": {
+          "name": "Intent Fitness"
+        }
+      }
+    }
+  }
+}

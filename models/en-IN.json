@@ -1,0 +1,600 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "intent fitness",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FitnessJourney",
+                    "slots": [],
+                    "samples": [
+                        "begin journey",
+                        "begin my fitness journey",
+                        "start my fitness journey",
+                        "open fitness journey",
+                        "start fitness journey",
+                        "start",
+                        "start fitness",
+                        "start my fitness",
+                        "start a game"
+                    ]
+                },
+                {
+                    "name": "QuizIntent",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "category",
+                            "samples": [
+                                "{category} then",
+                                "okay {category}",
+                                "{category}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "take {category} you wish",
+                        "take {category}",
+                        "i will go with {category} category",
+                        "choose {category} category",
+                        "select {category} category",
+                        "start {category} then",
+                        "i will go with {category}",
+                        "of {category}",
+                        "from {category}",
+                        "start {category}",
+                        "{category}"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answer"
+                        }
+                    ],
+                    "samples": [
+                        "option {answer}",
+                        "select {answer}",
+                        "lock {answer}",
+                        "i will go with {answer}",
+                        "definitely it is {answer}",
+                        "{answer} i guess",
+                        "i think {answer}",
+                        "is it {answer}",
+                        "for sure it's {answer}",
+                        "answer is {answer}",
+                        "{answer}",
+                        "it is {answer}"
+                    ]
+                },
+                {
+                    "name": "ChangeCategory",
+                    "slots": [],
+                    "samples": [
+                        "different category"
+                    ]
+                },
+                {
+                    "name": "RepeatAnything",
+                    "slots": [
+                        {
+                            "name": "QnA",
+                            "type": "QnA"
+                        }
+                    ],
+                    "samples": [
+                        "repeat {QnA} also",
+                        "i missed {QnA}",
+                        "say the {QnA} again",
+                        "can you repeat the {QnA}",
+                        "repeat the last statement",
+                        "i missed that",
+                        "say again",
+                        "can you repeat",
+                        "sorry i can't hear you",
+                        "please repeat that",
+                        "sorry i missed that",
+                        "come again",
+                        "can you repeat that",
+                        "say that again",
+                        "repeat it",
+                        "say it again"
+                    ]
+                },
+                {
+                    "name": "Continue",
+                    "slots": [],
+                    "samples": [
+                        "let's continue",
+                        "continue now",
+                        "i am ready continue",
+                        "same category",
+                        "continue with same category",
+                        "continue",
+                        "done"
+                    ]
+                },
+                {
+                    "name": "FitnessFacts",
+                    "slots": [],
+                    "samples": [
+                        "fitness fact sounds great",
+                        "i wanna know a fitness fact",
+                        "i wanna know an interesting fitness fact",
+                        "I would like a fitness fact",
+                        "I would love an interesting fitness fact",
+                        "how about a fitness fact",
+                        "how about an interesting fitness fact",
+                        "i want to know an interesting fitness fact",
+                        "i want to know a interesting fact",
+                        "tell me an interesting fact",
+                        "tell me a fact",
+                        "interesting fact",
+                        "facts",
+                        "fact",
+                        "fitness fact",
+                        "tell me a interesting fitness fact"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "category",
+                    "values": [
+                        {
+                            "id": "0",
+                            "name": {
+                                "value": "random",
+                                "synonyms": [
+                                    "whatever you like",
+                                    "whatever",
+                                    "any",
+                                    "anything",
+                                    "Random"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "32",
+                            "name": {
+                                "value": "Cartoon and Animations",
+                                "synonyms": [
+                                    "animation",
+                                    "Animations",
+                                    "Cartoon"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "31",
+                            "name": {
+                                "value": "Anime and Manga",
+                                "synonyms": [
+                                    "Japanese Anime",
+                                    "Manga",
+                                    "Anime"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "30",
+                            "name": {
+                                "value": "Gadgets",
+                                "synonyms": [
+                                    "gadget",
+                                    "device",
+                                    "Technology",
+                                    "Devices"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "29",
+                            "name": {
+                                "value": "Comics",
+                                "synonyms": [
+                                    "marvel",
+                                    "D. C.",
+                                    "comic"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "28",
+                            "name": {
+                                "value": "Vehicles",
+                                "synonyms": [
+                                    "automobile",
+                                    "vehicle",
+                                    "car",
+                                    "Cars"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "27",
+                            "name": {
+                                "value": "Animals",
+                                "synonyms": [
+                                    "animal",
+                                    "Wildlife"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "26",
+                            "name": {
+                                "value": "Celebrities",
+                                "synonyms": [
+                                    "celebrity",
+                                    "actor",
+                                    "Actors"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "25",
+                            "name": {
+                                "value": "Art"
+                            }
+                        },
+                        {
+                            "id": "24",
+                            "name": {
+                                "value": "Politics",
+                                "synonyms": [
+                                    "political"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "23",
+                            "name": {
+                                "value": "History",
+                                "synonyms": [
+                                    "past"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "22",
+                            "name": {
+                                "value": "Geography",
+                                "synonyms": [
+                                    "city locations",
+                                    "country locations",
+                                    "locations",
+                                    "loaction",
+                                    "Geo"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "21",
+                            "name": {
+                                "value": "Sports",
+                                "synonyms": [
+                                    "Game",
+                                    "sport",
+                                    "Olympic",
+                                    "Games"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "20",
+                            "name": {
+                                "value": "Mythology",
+                                "synonyms": [
+                                    "Myth"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "19",
+                            "name": {
+                                "value": "Mathematics",
+                                "synonyms": [
+                                    "math",
+                                    "Maths"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "18",
+                            "name": {
+                                "value": "Computers",
+                                "synonyms": [
+                                    "P. C.",
+                                    "Laptop",
+                                    "Computer"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "17",
+                            "name": {
+                                "value": "Science and Nature",
+                                "synonyms": [
+                                    "environment",
+                                    "Nature",
+                                    "Science"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "16",
+                            "name": {
+                                "value": "Board Games",
+                                "synonyms": [
+                                    "board"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "15",
+                            "name": {
+                                "value": "Video Games",
+                                "synonyms": [
+                                    "video game",
+                                    "console game",
+                                    "Console Games"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "14",
+                            "name": {
+                                "value": "Television",
+                                "synonyms": [
+                                    "TV",
+                                    "T V"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "13",
+                            "name": {
+                                "value": "Musicals and Theatres",
+                                "synonyms": [
+                                    "Theatre",
+                                    "Theatres",
+                                    "Musical Theatres"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "12",
+                            "name": {
+                                "value": "Music",
+                                "synonyms": [
+                                    "Music Industry"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "11",
+                            "name": {
+                                "value": "Film",
+                                "synonyms": [
+                                    "Films",
+                                    "movie",
+                                    "movies",
+                                    "Cinema"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "10",
+                            "name": {
+                                "value": "Books",
+                                "synonyms": [
+                                    "Literature",
+                                    "Book"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "9",
+                            "name": {
+                                "value": "General Knowledge",
+                                "synonyms": [
+                                    "G. K.",
+                                    "common",
+                                    "General",
+                                    "G K",
+                                    "GK"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "answer",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "no idea",
+                                "synonyms": [
+                                    "sorry no clue",
+                                    "sorry no idea",
+                                    "i don't know that one",
+                                    "i have no idea",
+                                    "i don't know",
+                                    "nada",
+                                    "i'm dumb",
+                                    "sorry",
+                                    "no clue",
+                                    "don't know"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "D",
+                                "synonyms": [
+                                    "D.",
+                                    "option four",
+                                    "fourth one",
+                                    "4",
+                                    "fourth",
+                                    "d",
+                                    "option D",
+                                    "D"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C",
+                                "synonyms": [
+                                    "C.",
+                                    "option three",
+                                    "third",
+                                    "third option",
+                                    "third one",
+                                    "c",
+                                    "option C",
+                                    "C"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B",
+                                "synonyms": [
+                                    "B.",
+                                    "option two",
+                                    "second",
+                                    "second one",
+                                    "second option",
+                                    "b",
+                                    "option B",
+                                    "B"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A",
+                                "synonyms": [
+                                    "A.",
+                                    "option one",
+                                    "first option",
+                                    "first",
+                                    "first one",
+                                    "a",
+                                    "option A",
+                                    "A"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "QnA",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "answer",
+                                "synonyms": [
+                                    "option",
+                                    "options",
+                                    "answers"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "question"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "QuizIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "category",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1208491663672.23450016790"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answer",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1208491663672.23450016790",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Try something like movie, music, sports."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.511827582536.1040861289969",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Reply with A, B, C or D"
+                    }
+                ]
+            }
+        ]
+    }
+}
