@@ -1,7 +1,7 @@
 # Mind-Body-HackJaipur
 ## Transform daily boring tasks, lessons to interesting ones.
 
-Submission for <b>Hack Jaipur</b> Hackthon:
+Submission for <b>HackJaipur</b> Hackathon:
 
 ### The problem it solves:
 
