@@ -17,4 +17,4 @@ Give it a try:
 Faced problems while making scripts of every exercise, but able to do it after a lot of testing and proper implementation. As of now, our exercise base and workout routines are quite limited. After this campaign is over, we plan to introduce premium content with an in-skill purchase feature. In the premium version, the skill will also support multiple user profiles. For each profile, we will track his height, weight, calories burnt, exercise performed, and quizzes played and modify our quizzes and workout sessions accordingly. We will also suggest the user, weekly plans for the best output.
 This is yet to achieve.
 
-! [Marketplace Preview] (https://echo-backgrounds.s3.ap-south-1.amazonaws.com/Screenshot+from+2020-06-20+22-18-15.png)
+![Marketplace Preview](https://echo-backgrounds.s3.ap-south-1.amazonaws.com/Screenshot+from+2020-06-20+22-18-15.png)
